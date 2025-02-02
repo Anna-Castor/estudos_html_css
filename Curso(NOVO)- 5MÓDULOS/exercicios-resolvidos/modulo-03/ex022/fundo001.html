@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papel de Parede</title>
     <style>
-        body {
+        /* body {
             background-image: url('imagens/wallpaper001.jpg');
+        } */
+
+        .quadrado {
+            border: 3px solid;
+            border-radius: 100%;
+            display: inline-block;
+            height: 300px;
+            width: 300px;
+        }
+
+        div#chapado {
+            background-color: rgb(255, 4, 205);
+        }
+
+        div#gradiente {
+            background-image:
+            linear-gradient(to top, rgb(31, 214, 31), rgb(0, 140, 255));
+        }
+
+        div#imagem {
+            background-image: url(./imagens/pattern001.png);
         }
     </style>
 </head>
 <body>
     <h1>Papel de parede</h1>
+    <p>Vou fazer aqui uns testes com imagens. Bora brincar sério</p>
+
+    <div class="quadrado" id="chapado"></div>
+
+    <div class="quadrado" id="gradiente"></div>
+
+    <div class="quadrado" id="imagem"></div>
 </body>
 </html>
