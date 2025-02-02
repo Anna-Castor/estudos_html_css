@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu própio servidor</p>
+    <video src="./2.mp4" width="300" poster="./imagemcapa1.jpg" controls></video>  <!--Aqui você colocou o poster da imagem do vídeo, para isso tem que deixar nas mesmas dimensões-->
+    <video src="./2.mkv" width="300" controls></video>
+    <!--Quanto mais possibilidades você colocar, maior a probabilidade de ter compatibilidade com os aparelhos que irão acessar. O problema disso é que isso de vídeos hospedados pode  gerar muito consumo de dados-->
+    <p>Se nenhum abrir você pode colocar a msg> Seu navegador não tem compatibilidade. <a href="./2.mp4">Clique aqui</a> para baixar e tal</p>
+
+    <h1>Vídeos Externos</h1>
+    <!--Aqui ao clicar no vídeo não vai consumir dados do teu servidor, mas de onde ele estiver hospedado. Copia o código direto do Youtube ou Vimeo clicando em Compartilhar > INCORPORAR. Então esse é melhor-->
+    <h2>Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BDwiUiitUbQ?si=jE2zywPtTv-VUQ1J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

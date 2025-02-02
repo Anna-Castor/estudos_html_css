@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio7 - Imagens</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+        <p>Você está vendo a imagem completa? Experimente ampliar o tamanho de sua janela para aproveitar a melhor experiência.</p>
+
+
+    <picture>
+        <!-- Se a largura da tela for tanto ou menor, carrega 'arquivo tal' -->
+        <source media="(max-width: 740px)" srcset="paisagem-p.png">
+        <source media="(max-width: 1200px)" srcset="paisagem-m.png">
+        <img src="./paisagem-g.png" alt="Imagem grande mulher braços abertos">
+    </picture>
+    
+</body>
+</html>

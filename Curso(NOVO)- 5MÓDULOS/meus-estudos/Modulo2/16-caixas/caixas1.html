@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes</title>
+    <style>
+        h1 /*BOX-LEVEL*/{
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+            /* Height e Width = BOX SIZING*/
+
+            /*Sempre configurar na ordem do relógio*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            /* SHORTHAND --> padding: 10px 10px 10px 10px; */
+            /* SHORTHAND se forem iguais --> padding: 10px; */
+            /* SHORTHAND se forem dois valores --> padding: 10px (top/bottom) 20px (right/left); */         
+
+            margin-top:40px;
+            margin-right: 40px;
+            margin-bottom:40px;
+            margin-left:40px;
+            /* SHORTHAND: o mesmo  é válido --> margin: 40px 40px 40px 40 px;*/     
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: blueviolet;
+            /* SHORTHAND --> border: 10px solid blueviolet; */     
+
+            outline-width: 5px;
+            outline-style: dotted;
+            outline-color: rgb(165, 230, 12);
+            /* SHORTHAND --> outline: 5px dotted rgb(165,230,12)*/
+   
+
+
+        }
+
+        a /* INLINE-LEVEL*/ { 
+            border-width: 5px;
+            border-style:dashed;
+            border-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo BOXES</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="https://www.youtube.com/" target="blank">links</a> são exemplos de inline-level.</p>
+</body>
+</html>

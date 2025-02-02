@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture><!--Usa essa tag para ORGANIZAR-->
+        <source media="(max-width: 750px)" srcset="img_pequena.png">
+        <source media="(max-width: 1050px)" srcset="img_md.png"> 
+        <img src="./img_gr.png" alt="Imagem Grande fundo verde"/>
+    </picture>
+
+    <!--Aqui tá dizendo assim, oh, se tiver uma imagem no tamanho esse aí carregue minha imagem média. A utilidade disso é a USABILIDADE DO USUÁRIO. Se ele acessar de diferentes dispositivos ele vai ter mais conforto ao visualizar as imagens. Isso melhor o UX e melhora assim o tempo que ele fica no site, fazendo com que os mecanismos de busca do Google tendam a mostrar o seu site-->
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.Primeira maneira:</p>
+    <audio src="./midia/guanacast-33.mp3" controls autoplay></audio>
+    <!--MP3, KAV, OGG-->
+    <p>Outra forma de colocar é colocando várias possibilidades para já tentar evitar que o navegador dê erro</p>
+    <audio preload="metadata" controls autoplay>
+        <source src="./midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="./midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="./midia/guanacast-33.wav type=audio/wav">
+        <!--Caso nenhum deles funcione você ainda pode deixar uma mensagem de erro-->
+        <p>Infelizmente seu navegador não consegue reproduzir. <a href="./midia/guanacast-33.mp3">Clique aqui</a> para baixar o arquivo MP3</p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "UTF-8"
+
+body {
+    background-color: rgb(218, 246, 204);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(207, 19, 19);
+}
+
+/*Todo id em HTML é identificado nas CSS por um símbolo #. Toda class em HTML é identificada nas CSS por um
+ponto. E não necessariamente preciso dizer o nome do elemento aí embaixo, ou seja, poderia ser h1#principal ou apenas #principal . O que faz com que qualquer elemento que tenha essa #principal receba esse identificador e suas características
+
+
+Em HTML é id, em CSS é #
+Em HTML é class, em CSS é .
+
+*/
+h1#principal {
+    text-align: center;
+    color:blueviolet;
+    background-color: rgb(154, 154, 154);
+
+}
+
+h2 {
+    color: rgb(24, 102, 205);
+}
+
+.basico {
+    color: rgb(249, 32, 162);
+    font-weight: bold;
+}
+
+.intermediario {
+    color: rgb(234, 160, 13);
+}
+
+.avancado {
+    color: rgb(61, 165, 42);
+}
+
+.destaque {
+    background-color: rgb(203, 244, 0);
+}
